@@ -7,7 +7,7 @@ const geocode = async (arr: Array<any>) => {
   // console.log(order);
 
   var promise = new Promise( (resolve, reject) => {
-    let count = 450;
+    let count = 0;
     let axiosArray: any = [];
 
     setInterval( async ()=> {
@@ -118,7 +118,7 @@ const orderArray = (arr: Array<any>) => {
 }
 
 const getString = (obj: AddressObject) => {
-  var string = 'http://nominatim.openstreetmap.org/search?format=json&limit=1';
+  var string = 'https://nominatim.openstreetmap.org/search?format=json&limit=1';
 
   string = string + '&street=' + obj.street;
   string = string + '&state=' + obj.state;
