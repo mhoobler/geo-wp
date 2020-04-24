@@ -30,7 +30,7 @@ const geocode = async (arr: Array<any>) => {
         count++;
       }
 
-    }, 2000)
+    }, 1234)
 
   })
 
