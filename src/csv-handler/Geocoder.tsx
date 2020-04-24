@@ -10,11 +10,12 @@ const geocode = async (arr: Array<any>) => {
     let count = 500;
     let axiosArray: any = [];
 
-    setInterval( async ()=> {
+    let inter = setInterval( async ()=> {
       console.log(count);
 
       if(count >= order.length){
         resolve(axiosArray);
+        clearInterval(inter);
       }else{
         let url = getString(order[count])
         let response = await axios.get(url);
