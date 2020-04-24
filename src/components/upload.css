@@ -1,0 +1,40 @@
+
+#upload-container{
+  text-align: center;
+}
+
+#file-container{
+  display: block;
+}
+
+.settings-container{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.form-50{
+  width: 50%;
+  float: left;
+}
+
+.form-100{
+  display: block;
+  margin: 0 auto;
+}
+
+.form-item > label{
+  display: block;
+}
+
+.form-item > input {
+  display: block;
+  margin: 5px auto;
+}
+
+@media only screen and (max-width: 575px){
+  .form-item{
+    display: block;
+    width: 100%;
+  }
+}

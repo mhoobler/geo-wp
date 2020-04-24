@@ -1,0 +1,23 @@
+.container {
+  margin: 0 auto;
+  width: 55%;
+}
+
+pre{
+  background: #CCC;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+ol {
+  padding: 2rem;
+  margin: inherit;
+}
+
+li {
+  margin-bottom: 2rem;
+}
+
+li > span{
+  font-size: 14px;
+}
