@@ -32,15 +32,19 @@ function App() {
         </div>
 
         <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route exact path='/upload'>
+
+          <Route path='/upload'>
             <Upload />
           </Route>
-          <Route exact path='/instructions'>
+
+          <Route path='/instructions'>
             <Instructions />
           </Route>
+
+          <Route path="/">
+            <Home />
+          </Route>
+
         </Switch>
       </Router>
     </div>
