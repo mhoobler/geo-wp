@@ -1,6 +1,6 @@
 import geocode from './Geocoder';
-import CSVhelper from './CSVhelper';
-import XMLhelper from './XMLhelper';
+import {makeCSV, makeLocationRows} from './CSVhelper';
+import {makeXML, stringifyXML} from './XMLhelper';
 
 import {Settings} from '../Interface';
 
@@ -107,14 +107,14 @@ class CSVHandler {
   async writeCSV(){
     //get data for CSV
     let geo: any = await geocode(this.data);
-    let locRows = CSVhelper.makeLocationRows(geo);
-    let XMLstring = XMLhelper.stringifyXML(geo);
+    let locRows = makeLocationRows(geo);
+    let XMLstring = stringifyXML(geo);
     //get data for XML
 
 
     console.log(locRows);
-    CSVhelper.makeCSV(locRows);
-    XMLhelper.makeXML(XMLstring);
+    makeCSV(locRows);
+    makeXML(XMLstring);
     
 
 
