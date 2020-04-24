@@ -7,7 +7,7 @@ const geocode = async (arr: Array<any>) => {
   // console.log(order);
 
   var promise = new Promise( (resolve, reject) => {
-    let count = 0;
+    let count = 500;
     let axiosArray: any = [];
 
     setInterval( async ()=> {

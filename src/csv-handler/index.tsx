@@ -1,7 +1,6 @@
 import geocode from './Geocoder';
 import CSVhelper from './CSVhelper';
 import XMLhelper from './XMLhelper';
-import {create} from 'xmlbuilder2';
 
 import {Settings} from '../Interface';
 
